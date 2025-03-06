@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oreo Shake Recipe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Custom Styles */
+        body { background-color: #e0f7fa; } /* Light Blue Background */
+        .text-green { color: #4caf50; } /* Green Text */
+        .bg-green { background-color: #4caf50; } /* Green Background */
+        .bg-orange { background-color: #ff9800; } /* Orange Background */
+        .text-orange { color: #ff9800; } /* Orange Text */
+
+        /* Smooth Transitions */
+        .transition-smooth { transition: all 0.3s ease-in-out; }
+
+        /* Recipe Card */
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Image Container */
+        .image-container {
+            flex: 0 0 150px; /* Fixed width for the image */
+            height: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Content Container */
+        .content-container {
+            flex: 1;
+        }
+
+        /* Hover Effects */
+        .hover-scale:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-light-blue">
+    <!-- Recipe Page -->
+    <div class="min-h-screen flex items-center justify-center p-5">
+        <div class="recipe-card w-full max-w-3xl transition-smooth hover-scale">
+            <!-- Image on the Left -->
+            <div class="image-container">
+                <img src="oreoshake.png" alt="Oreo Shake">
+            </div>
+
+            <!-- Content on the Right -->
+            <div class="content-container">
+                <h1 class="text-3xl font-bold text-green mb-4">Oreo Shake</h1>
+                <p class="text-gray-600 mb-6">A creamy, indulgent, and delicious Oreo shake that’s perfect for satisfying your sweet cravings!</p>
+
+                <!-- Ingredients -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold text-orange mb-2">Ingredients</h2>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>10 Oreo cookies</li>
+                        <li>2 cups vanilla ice cream</li>
+                        <li>1 cup cold milk</li>
+                        <li>1/2 cup whipped cream (optional)</li>
+                        <li>1 tablespoon chocolate syrup (optional)</li>
+                        <li>Crushed Oreo cookies for garnish</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold text-orange mb-2">Instructions</h2>
+                    <ol class="list-decimal list-inside text-gray-700">
+                        <li>Add Oreo cookies, vanilla ice cream, and cold milk to a blender.</li>
+                        <li>Blend until smooth and creamy.</li>
+                        <li>Pour the shake into a tall glass.</li>
+                        <li>Top with whipped cream and a drizzle of chocolate syrup (optional).</li>
+                        <li>Sprinkle crushed Oreo cookies on top for garnish.</li>
+                        <li>Serve immediately and enjoy!</li>
+                    </ol>
+                </div>
+
+                <!-- Back Button -->
+                <a href="index.html" class="btn bg-green text-white px-6 py-2 rounded-lg transition-smooth hover:bg-orange">Back to Recipes</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

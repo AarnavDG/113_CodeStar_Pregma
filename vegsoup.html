@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Soup Recipe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Custom Styles */
+        body { background-color: #e0f7fa; } /* Light Blue Background */
+        .text-green { color: #4caf50; } /* Green Text */
+        .bg-green { background-color: #4caf50; } /* Green Background */
+        .bg-orange { background-color: #ff9800; } /* Orange Background */
+        .text-orange { color: #ff9800; } /* Orange Text */
+
+        /* Smooth Transitions */
+        .transition-smooth { transition: all 0.3s ease-in-out; }
+
+        /* Recipe Card */
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Image Container */
+        .image-container {
+            flex: 0 0 150px; /* Fixed width for the image */
+            height: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Content Container */
+        .content-container {
+            flex: 1;
+        }
+
+        /* Hover Effects */
+        .hover-scale:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-light-blue">
+    <!-- Recipe Page -->
+    <div class="min-h-screen flex items-center justify-center p-5">
+        <div class="recipe-card w-full max-w-3xl transition-smooth hover-scale">
+            <!-- Image on the Left -->
+            <div class="image-container">
+                <img src="vegsoup.png" alt="Vegetarian Soup">
+            </div>
+
+            <!-- Content on the Right -->
+            <div class="content-container">
+                <h1 class="text-3xl font-bold text-green mb-4">Vegetarian Soup</h1>
+                <p class="text-gray-600 mb-6">A hearty, wholesome, and flavorful vegetarian soup packed with fresh vegetables and herbs. Perfect for a cozy meal!</p>
+
+                <!-- Ingredients -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold text-orange mb-2">Ingredients</h2>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>2 tablespoons olive oil</li>
+                        <li>1 medium onion, chopped</li>
+                        <li>3 garlic cloves, minced</li>
+                        <li>2 carrots, peeled and diced</li>
+                        <li>2 celery stalks, diced</li>
+                        <li>1 medium potato, peeled and diced</li>
+                        <li>1 cup green beans, trimmed and cut</li>
+                        <li>1 can (14 oz) diced tomatoes</li>
+                        <li>4 cups vegetable broth</li>
+                        <li>1 teaspoon dried thyme</li>
+                        <li>1 teaspoon dried oregano</li>
+                        <li>1 bay leaf</li>
+                        <li>1 cup cooked beans (optional)</li>
+                        <li>1 cup chopped leafy greens (spinach, kale, etc.)</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold text-orange mb-2">Instructions</h2>
+                    <ol class="list-decimal list-inside text-gray-700">
+                        <li>Heat olive oil in a large pot over medium heat.</li>
+                        <li>Sauté onions and garlic until fragrant (2-3 minutes).</li>
+                        <li>Add carrots, celery, potato, and green beans. Cook for 5-7 minutes.</li>
+                        <li>Stir in diced tomatoes, vegetable broth, thyme, oregano, and bay leaf.</li>
+                        <li>Bring to a boil, then reduce heat and simmer for 20-25 minutes.</li>
+                        <li>Add cooked beans and leafy greens. Cook for another 5 minutes.</li>
+                        <li>Season with salt and pepper. Remove bay leaf before serving.</li>
+                    </ol>
+                </div>
+
+                <!-- Back Button -->
+                <a href="index.html" class="btn bg-green text-white px-6 py-2 rounded-lg transition-smooth hover:bg-orange">Back to Recipes</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
