@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownie Cake Recipe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Custom Styles */
+        body { background-color: #fce4ec; } /* Light Pink Background */
+        .text-coral { color: #ff6f61; } /* Coral Text */
+        .bg-coral { background-color: #ff6f61; } /* Coral Background */
+        .bg-purple { background-color: #6a1b9a; } /* Purple Background */
+        .text-purple { color: #6a1b9a; } /* Purple Text */
+
+        /* Smooth Transitions */
+        .transition-smooth { transition: all 0.3s ease-in-out; }
+
+        /* Recipe Card */
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Image Container */
+        .image-container {
+            flex: 0 0 150px; /* Fixed width for the image */
+            height: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Content Container */
+        .content-container {
+            flex: 1;
+        }
+
+        /* Hover Effects */
+        .hover-scale:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-light-pink">
+    <!-- Recipe Page -->
+    <div class="min-h-screen flex items-center justify-center p-5">
+        <div class="recipe-card w-full max-w-3xl transition-smooth hover-scale">
+            <!-- Image on the Left -->
+            <div class="image-container">
+                <img src="brownie.png" alt="Brownie Cake">
+            </div>
+
+            <!-- Content on the Right -->
+            <div class="content-container">
+                <h1 class="text-3xl font-bold text-coral mb-4">Brownie Cake</h1>
+                <p class="text-gray-600 mb-6">A rich, fudgy, and decadent brownie cake that's perfect for any occasion. Easy to make and impossible to resist!</p>
+
+                <!-- Ingredients -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold text-purple mb-2">Ingredients</h2>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>1 cup unsalted butter</li>
+                        <li>2 cups granulated sugar</li>
+                        <li>4 large eggs</li>
+                        <li>1 tsp vanilla extract</li>
+                        <li>1 cup all-purpose flour</li>
+                        <li>1/2 cup cocoa powder</li>
+                        <li>1/4 tsp salt</li>
+                        <li>1/2 cup chocolate chips (optional)</li>
+                    </ul>
+                </div>
+
+                <!-- Instructions -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold text-purple mb-2">Instructions</h2>
+                    <ol class="list-decimal list-inside text-gray-700">
+                        <li>Preheat the oven to 350°F (175°C) and grease a baking pan.</li>
+                        <li>Melt the butter and mix it with sugar in a large bowl.</li>
+                        <li>Add eggs and vanilla extract, and whisk until smooth.</li>
+                        <li>Sift in flour, cocoa powder, and salt. Mix until combined.</li>
+                        <li>Fold in chocolate chips (if using).</li>
+                        <li>Pour the batter into the pan and bake for 25-30 minutes.</li>
+                        <li>Let it cool before slicing and serving.</li>
+                    </ol>
+                </div>
+
+                <!-- Back Button -->
+                <a href="index.html" class="btn bg-coral text-white px-6 py-2 rounded-lg transition-smooth hover:bg-purple">Back to Recipes</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
