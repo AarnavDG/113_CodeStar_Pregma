@@ -1,0 +1,123 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Coral and Pink Gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Container */
+.calculator-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #6a1b9a; /* Purple */
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #6a1b9a; /* Purple */
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ff6f61; /* Coral */
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+    outline: none;
+}
+
+/* Calculate Button */
+#calculate-btn {
+    background: #ff6f61; /* Coral */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#calculate-btn:hover {
+    background: #e65a50; /* Darker Coral */
+    transform: translateY(-3px);
+}
+
+#calculate-btn:active {
+    transform: translateY(0);
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6a1b9a; /* Purple */
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.result span {
+    font-weight: bold;
+    color: #ff6f61; /* Coral */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

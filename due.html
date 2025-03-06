@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Due Date Calculator - Pregma</title>
+    <link rel="stylesheet" href="due.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Due Date Calculator</h1>
+        <p>Enter the first day of your last menstrual period (LMP) to calculate your due date.</p>
+        <div class="input-group">
+            <label for="lmp-date">Last Menstrual Period (LMP):</label>
+            <input type="date" id="lmp-date" name="lmp-date">
+        </div>
+        <button id="calculate-btn">Calculate Due Date</button>
+        <div id="result" class="result">
+            <p>Your estimated due date is: <span id="due-date"></span></p>
+        </div>
+    </div>
+
+    <script src="due.js"></script>
+</body>
+</html>
